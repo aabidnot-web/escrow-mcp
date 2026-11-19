@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/modelcontextprotocol/registry/main/schema/server.json",
+  "name": "io.github.aabidnot-web/escrow-mcp",
+  "version": "0.1.0",
+  "description": "Deterministic in-flight action verification and execution gate for autonomous AI agents via Model Context Protocol (MCP).",
+  "homepage": "https://escrow.lag.agency",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aabidnot-web/escrow-mcp"
+  },
+  "license": "MIT",
+  "publisher": {
+    "name": "Aabid Hasan",
+    "email": "contact@lag.agency",
+    "url": "https://escrow.lag.agency"
+  },
+  "entrypoint": {
+    "type": "command",
+    "command": "escrow-mcp",
+    "transport": "stdio"
+  },
+  "installation": {
+    "pypi": "escrow-mcp",
+    "git": "git+https://github.com/aabidnot-web/escrow-mcp.git"
+  },
+  "tools": [
+    {
+      "name": "escrow_verified_transfer",
+      "description": "Deterministic in-flight financial execution gate. Intercepts and authorizes wire transfers before execution by reconciling against verified enterprise master ledgers."
+    },
+    {
+      "name": "escrow_audit_ledger",
+      "description": "Cryptographic read-only audit log for all agent-proposed execution attempts with SHA-256 evidence hashing."
+    }
+  ]
+}
